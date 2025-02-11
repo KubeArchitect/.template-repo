@@ -7,5 +7,6 @@ workflows:
   run-megalinter:
     jobs:
       - megalinter/run:
-          resource_class: relativesure/hetzner-ubuntu-kind
-          flavor: ci_light
+          resource_class: kubearchitect/hetzner-ubuntu-kind
+          context:
+            - main-context
